@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 10px;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*HEADER TAB*/
+
+header{
+    width:100%;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+}
+
+.navbar{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+ 
+.menu-item {
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: white;
+    text-decoration: none;
+}
+
+/*HEADER TITLE*/
+
+hr.header-border{
+    border-top: 1px solid #dfdfdf;
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:50px;
+    row-gap: 10px;
+    width: 100%;
+}
+.home-title > h1 {
+    font-size: 40px;
+    font-weight:700;
+}
+.home-title > h6 {
+    font-size:20px;
+    font-weight: 500px;
+}
+
+/*DOG IMAGE + PERSON*/
+
+#about-contact{
+    display: inline-block;
+}
+
+.left-container{
+    display:flex;
+    float:left;
+    width: 60%;
+    padding:10px;
+}
+
+.about-img {
+    height:60%;
+    width: 60%;
+}
+
+.content-caption {
+    font-size: 20px;
+    font-weight: 400px;
+    font-style: italic;
+    color: gray;
+}
+.content-person > img{
+    border-radius: 100%;
+}
+
+.person-info {
+    display:flex;
+    flex-direction: column;
+    float: right;
+    width:85%;
+}
+
+.person-info > p {
+    color:gray;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.content-person::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/*ABOUT INFORMATION*/
+
+hr.about-border {
+    border-top: 1px solid #808080;
+    width: 10%;
+}
+
+.information-title {
+    width:100%;
+    font-weight: 700;
+}
+
+.information-list > h1{
+    float:left;
+}
+
+/*CONTACT US*/
+
+.right-container{
+    display:flex;
+    float:right;
+    width:30%;
+    padding:10px;
+}
+.card{
+    border-style:solid;
+    background-color:antiquewhite;
+    border-width: 0px;
+    align-items: center;
+    width: 100%;
+    height:450px;
+    padding: 1rem;
+}
+
+.card-title {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title > h4{
+    font-size:20px;
+    font-weight: 700;
+}
+
+.card-title > p{
+    padding-bottom: 20px;
+}
+
+input[type=text]{
+    width:100%;
+    padding: 8px 20px;
+    margin:16px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius:2px;
+}
+
+.custom-select{
+    position:relative;
+    width: 100%;
+}
+
+/*OUR PACKAGE*/
+
+.package-container{
+    display:flex;
+    background-color: antiquewhite;
+    width:100%;
+    font-size: 40px;
+    font-weight:700;
+    text-align: center;
+    height:80px;
+    padding:20px 5px;
+}
+.package-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0px;
+    width: 100%;
+}
+
+.information-list2{
+    float: left;
+    width: 30%; 
+    padding: 10px;
+}
+
+.package-information{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+hr.package-border{
+    border-top: 1px solid #dfdfdf;
+    width: 10%;
+}
+
+.information-list3{
+    float:left;
+    width:30%;
+    padding:10px;
+}
+
+.package-information1{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+/*CTA*/
+
+hr.CTA-border{
+    border-top: 1px solid #dfdfdf;
+    width: 100%;
+}
+
+.call-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:50px 10px;
+    row-gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.call-title > h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.call-title > h6 {
+    font-size:17px;
+    font-weight:400;
+    width: 50%;
+    text-align: center;
+    padding-left: 24%;
+}
+.button{
+    border:none;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    font-size: 16px;
+    padding: 15px 5px;
+    margin: 4px 2px;
+    color: white;
+    position:absolute;
+    left:47%;
+}
+
+.button:hover{
+    background-color: gray;
+    transition: 0.7s;
+}
+
+
