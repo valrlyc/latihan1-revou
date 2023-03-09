@@ -1,0 +1,133 @@
+     
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+    body{
+        padding:1rem;
+    }
+    .navbar {
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        padding: 10px opx;
+    }
+    .Home {
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 4px 10px;
+        background-color: black;
+        color:white;
+    }
+    .Logout {
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 4px 10px;
+        background-color: black;
+        color: white;
+    }
+            #title {
+                font-size: 50px;
+                font-weight: bold;
+            }
+            #description {
+               font-size: 20px;
+            }
+            .content{
+                padding-top: 20px;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            .form{
+                display: flex;
+                flex-wrap:wrap;
+                width:30%;
+                padding:1rem;
+            }
+            .form1{
+                width: 40%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .title-form{
+                font-size: 16px;
+            }
+            .form2{
+                width: 60%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .input{
+                width: 100%;
+                padding: 10px;
+                border-radius:4px;
+                outline: 1px solid #f8f8f8;
+                border: none;
+                transition: outline 0,5s ease-in-out;
+            }
+            .input:focus{
+                outline: 2px solid lightblue;
+            }
+            .input:hover{
+                outline:2px solid lightblue;
+            }
+            input[type="radio"] {
+                accent-color: #184f69;
+            }
+            .message-area {
+                width: 100%;
+                position:sticky;
+                display: block;
+                resize: none;
+                padding: 5px 10px 85px;
+                border-radius: 4px;
+                outline: 1px solid #c5c5c5;
+                border: none;
+                transition: outline 0,5s ease-in-out;
+            }
+            .message-area:focus {
+                outline: 2px solid lightblue;
+            }
+            .message-area:hover {
+                outline: 2px solid lightblue;
+            }
+            .button {
+                border: none;
+                background-color: #dda0dd;
+                font-weight: bold;
+                color: white;
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 6px;
+            }
+            .table{
+                font-family: "Times New Roman", Times, serif;
+                border-collapse: collapse;
+            }
+            .table-section{
+                padding: 100px;
+                width: 1000px;
+                
+            }
+            th, td{
+                text-align: center;
+                padding:1rem;
+                height: 50px;
+            }
+            .table-head-rows{
+                color:black;
+                background-color:#18d2eb;
+                border-width:100px;
+            }
+            tr {
+                border-bottom: 2px solid #b6b6b6;
+            }
+            tbody > tr > th td{
+                font-weight: normal;
+            }
+            tbody > tr[typeof="colwithcolor"] {
+                background-color: #dda0dd;
+            }
